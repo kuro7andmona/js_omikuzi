@@ -1,6 +1,15 @@
-function buttonClick() {
-  const omikuji_result = ["大吉", "中吉", "小吉"];
-  const random = omikuji_result[Math.floor(Math.random() * omikuji_result.length)];
-  console.log(random);
-
-}
+ const results = [
+    '大大吉.png',
+    '大吉.png',
+    '中吉.png',
+    '吉.png',
+    '小吉.png',
+    '末吉.png',
+    '凶.png',
+    '大凶.png'
+  ];
+  
+  const elem = document.getElementById('push');
+  const element = document.getElementById('start');
+  const rotateItem = document.getElementById('rotate');
+  const target = document.getElementById('#draw');
