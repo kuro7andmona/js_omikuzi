@@ -12,4 +12,10 @@
   const elem = document.getElementById('push');
   const element = document.getElementById('start');
   const rotateItem = document.getElementById('rotate');
-  const target = document.getElementById('#draw');
+  const target = document.getElementById('#push');
+  
+  elem.addEventListener('click', function() {
+    if (element != null) {
+      tatefuri();
+    }
+  });
