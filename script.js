@@ -8,14 +8,31 @@
     '凶.png',
     '大凶.png'
   ];
-  
+
   const elem = document.getElementById('push');
   const element = document.getElementById('start');
   const rotateItem = document.getElementById('rotate');
   const target = document.getElementById('#push');
-  
+
   elem.addEventListener('click', function() {
     if (element != null) {
       tatefuri();
     }
   });
+
+function tatefuri() {
+    element.animate(
+      [{
+        transform: 'translateY(0)'
+      }, {
+        transform: 'translateY(-30px)'
+      }, {
+        transform: 'translateY(0)'
+      }], {
+        duration: 700,
+        iterations: 3
+      });
+    setTimeout(function() {
+      kaiten();
+    }, 2400);
+  }
