@@ -36,3 +36,20 @@ function tatefuri() {
       kaiten();
     }, 2400);
   }
+  
+  function kaiten() {
+    element.animate(
+      [{
+        transform: 'rotate(0deg)'
+      }, {
+        transform: 'rotate(180deg)'
+      }], {
+        duration: 700,
+        easing: 'linear',
+        fill: 'forwards'
+      });
+    setTimeout(function() {
+      touka();
+      btn();
+    }, 1000);
+  }
