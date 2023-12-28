@@ -25,7 +25,7 @@
       tatefuri();
     }
   });
-
+// 縦に振る動き
 function tatefuri() {
     element.animate(
       [{
@@ -38,11 +38,13 @@ function tatefuri() {
         duration: 700,
         iterations: 3
       });
+      // タイマー機能
     setTimeout(function() {
       kaiten();
     }, 2400);
   }
 
+// 縦に振った後、横に回転する動き
   function kaiten() {
     element.animate(
       [{
@@ -59,7 +61,7 @@ function tatefuri() {
       btn();
     }, 1000);
   }
-
+// 結果の画面に映るさい、ボタンをフェードアウト
   function btn() {
     target.animate(
       [{
@@ -91,6 +93,7 @@ function tatefuri() {
     }, 500);
   }
 
+  // ランダムに結果を出す。
   function fortuneAnime() {
     const key = Math.floor(Math.random() * results.length);
     const fortune = document.getElementById("fortune");
