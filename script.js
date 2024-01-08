@@ -97,12 +97,7 @@ function tatefuri() {
   function fortuneAnime() {
     const key = Math.floor(Math.random() * results.length);
     const fortune = document.getElementById("fortune");
-     // lastDayに今日の日付を、lastFortuneに今回の運勢を代入
-    // const lastDay = today;
-    // const lastFortune = random;
-    // // localStorageにそれぞれ日付と運勢を代入
-    // localStorage.setItem('lastDay', lastDay );
-    // localStorage.setItem('lastFortune', lastFortune );
+
     fortune.src = "img/" + results[key];
     fortune.animate(
       [{
